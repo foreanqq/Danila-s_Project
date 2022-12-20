@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.countainer {
+  width: 100%;
+  background-color: red;
+}
+.header {
+  height: 670px;
+  background-color: olive;
+}
+.info {
+    height: 670px;
+    background-color: aquamarine;
+}
+.gallery {
+    height: 700px;
+    background-color: blueviolet;
+}
+.shave_block {
+    height: 700px;
+    background-color: azure;
+}
+.footer {
+    height: 320px;
+    background-color: black;
+}
