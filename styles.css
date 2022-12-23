@@ -1,28 +1,143 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
 body {
-  margin: 0;
-  padding: 0;
+	height: 100%;
+	line-height: 1;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: 500;
+	background-color: #ffffff;
+	font-family: 'Playfair Display', serif;
 }
-.countainer {
+/*-------------------*/
+/*--------HEADER-------*/
+.header{
   width: 100%;
-  background-color: red;
+  height: 100vh;
+  background: url("img/header/head.jpg") center no-repeat fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.header {
-  height: 670px;
-  background-color: olive;
+
+.header__logo{
+
 }
-.info {
-    height: 670px;
-    background-color: aquamarine;
+
+.header__text{
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 130%;
+  color: #ffffff;
+  width: 610px;
+  height: 340px;
+  text-align: right;
 }
-.gallery {
-    height: 700px;
-    background-color: blueviolet;
+/*---------------*/
+/*------INFO_BLOCK-------*/
+.info__block{
+  background: url("img/info_block/black-concrete-textured-background\(1\).jpg");
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
-.shave_block {
-    height: 700px;
-    background-color: azure;
+
+.info__block_textlog{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
 }
-.footer {
-    height: 320px;
-    background-color: black;
+
+.info__block_text_title{
+  color: #ffffff;
+  font-size: 48px;
+  line-height: 130%;
+  margin: 0 0 35px 0;
+  display: inline-block;
+}
+.yelow{
+  color: #D1BD7D;
+}
+
+.info__block_text{
+  font-size: 36px;
+  text-align: right;
+  margin-right: 25px;
+  font-weight: 400;
+}
+
+
+.info__block_logo{
+
+}
+
+/*--------------*/
+
+.galary{
+  background: url("img/info_block/black-concrete-textured-background\(1\).jpg");
+  display: flex;
+  padding-top: 80px;
+}
+
+.galary_cont{
+  margin: 0 50px;
+}
+
+.galary_cont:nth-child(odd){
+  width: 286px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.galary_cont:nth-child(even){
+  width: 286px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+.galary__foto:nth-child(odd){
+  margin-bottom: 36px;
+}
+
+.galary__text{
+  font-size: 20px;
+  line-height: calc(27 / 20* 100%);
+  font-weight: 500;
+}
+
+.galary__text:nth-child(even){
+  margin-bottom: 60px;
+  margin-top: 50px;
 }
