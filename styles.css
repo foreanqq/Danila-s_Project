@@ -138,9 +138,33 @@ p {
   height: 25vh;
 }
 
-/* media */
+
+/* 
+--------------------------------------
+-Доделать блок footer и shave_block
+-Доделать @media для разных разрешений
+--------------------------------------
+*/
+
+
+/* media  25.12.22 (не доделанно)*/
 @media screen and (max-width: 900px){
-  .info_block p{
+  .info_text_box p{
     font-size: 14px;
   }
+  .info_wrapper{
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .dani_photo{
+   width: 100vw;
+   height: 25vh;
+  }
+  .dani_photo img{ 
+    scale: 0.4;
+  }
+  .pole{
+    display: none;
+  }
+  .info_text_box {}
 }
