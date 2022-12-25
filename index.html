@@ -48,9 +48,7 @@
           var items = $("h4, p, img");
           items.css("opacity", 0);
           for (var i = 0; i < items.length; i++) {
-            $(items[i])
-              .delay(i)
-              .animate({ opacity: 1 },300);
+            $(items[i]).delay(i).animate({ opacity: 1 }, 300);
           }
         </script>
       </div>
@@ -59,8 +57,8 @@
       <div class="container"></div>
     </div>
     <div class="shave_block">
-      <div class="container shave_container">
-        <img src="/assets/svg/text_logo.svg" alt="" class="shave_logo">
+      <div class="container">
+        <img src="/assets/svg/text_logo.svg" alt="" class="shave_logo" />
       </div>
     </div>
     <div class="footer">
