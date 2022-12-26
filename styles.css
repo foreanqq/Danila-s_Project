@@ -28,7 +28,9 @@ h6 {
 }
 html,
 body {
+  overflow-x: hidden;
 	height: 100%;
+  width: 100%;
 	line-height: 1;
 	font-size: 14px;
 	color: #ffffff;
@@ -102,42 +104,35 @@ body {
 
 /*--------------*/
 
-.galary{
+.galary_image{
   background: url("img/info_block/black-concrete-textured-background\(1\).jpg");
   display: flex;
+  min-width: 0;
   padding-top: 80px;
 }
 
-.galary_cont{
-  margin: 0 50px;
-}
-
 .galary_cont:nth-child(odd){
-  width: 286px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .galary_cont:nth-child(even){
-  width: 286px;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column-reverse;
 }
 
-.galary__foto:nth-child(odd){
-  margin-bottom: 36px;
-}
 
 .galary__text{
+  text-align: left;
   font-size: 20px;
   line-height: calc(27 / 20* 100%);
   font-weight: 500;
+  width: 333px;
 }
 
 .galary__text:nth-child(even){
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   margin-top: 50px;
 }
