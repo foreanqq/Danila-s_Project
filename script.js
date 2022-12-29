@@ -1,3 +1,3 @@
-new Swiper('.galary_image',{
-    slidesPerView: 4,
+new Swiper(".galary_image", {
+  slidesPerView: 4,
 });

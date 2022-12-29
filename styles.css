@@ -133,21 +133,30 @@ body {
 /* gallery */
 
 .galary_image {
-  background: url("assets/img/black_texture.jpg");
+  background-color: olive;
+  /* background: url("assets/img/black_texture.jpg"); */
   display: flex;
   min-width: 0;
-  padding-top: 80px;
+  padding: 15px 0 15px 20px;
+}
+.galary_cont {
+  min-width: 250px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .galary_cont:nth-child(odd) {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
 }
-
+.galary__foto img {
+  min-width: 100%;
+  min-height: 100%;
+}
 .galary_cont:nth-child(even) {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column-reverse;
 }
 .galary__text {
@@ -155,13 +164,12 @@ body {
   font-size: 20px;
   line-height: calc(27 / 20 * 100%);
   font-weight: 500;
-  width: 333px;
   color: white;
 }
 
 .galary__text:nth-child(even) {
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 /* shave block */
