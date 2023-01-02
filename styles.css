@@ -193,7 +193,24 @@ body {
   background-color: black;
   height: 25vh;
 }
+.button{
 
+}
+.button a{
+  position: fixed;
+  right: 30px;
+  bottom: 15px;
+  width: 150px;
+  height: 150px;
+  background: rgba(0, 29, 255, 0.6);
+  border-radius: 50%;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+}
 /* 
 --------------------------------------
 -Доделать блок footer и shave_block
