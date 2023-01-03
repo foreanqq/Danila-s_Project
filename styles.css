@@ -1,0 +1,279 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  background-color: #ffffff;
+  font-family: "Playfair Display", serif;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* header */
+.header {
+  width: 100%;
+  height: 100vh;
+  background: url("/assets/img/header_bg.jpg") center no-repeat fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 70%;
+}
+.header_text {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  color: #ffffff;
+}
+
+/* info block */
+
+.info {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/black_texture.jpg);
+}
+.info_wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.dani_photo {
+  height: 100vh;
+  width: 90vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info_text {
+  width: 47%;
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 5%;
+  color: #ffffff;
+}
+.info_text_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info_text span {
+  color: #d1bd7d;
+}
+.info_text h4 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 130%;
+}
+.info_text p {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 130%;
+}
+.pole {
+  scale: 0.75;
+
+  margin-left: 3%;
+}
+/* gallery */
+
+.galary_image {
+  background-color: olive;
+  /* background: url("assets/img/black_texture.jpg"); */
+  display: flex;
+  min-width: 0;
+  padding: 15px 0 15px 20px;
+}
+.galary_cont {
+  min-width: 250px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.galary_cont:nth-child(odd) {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.galary__foto img {
+  min-width: 100%;
+  min-height: 100%;
+}
+.galary_cont:nth-child(even) {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column-reverse;
+}
+.galary__text {
+  text-align: left;
+  font-size: 20px;
+  line-height: calc(27 / 20 * 100%);
+  font-weight: 500;
+  color: white;
+}
+
+.galary__text:nth-child(even) {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+/* shave block */
+.shave_block {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/img/йцуйцу.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shave_logo {
+  height: 95vh;
+}
+
+/* footer */
+.footer {
+  background-color: black;
+  height: 25vh;
+}
+
+/* ///////////////////////// */
+/* Button & Transition */
+/* ///////////////////////// */
+.button {
+}
+.button a {
+  position: fixed;
+  right: 30px;
+  bottom: 15px;
+  width: 150px;
+  height: 150px;
+  z-index: 999;
+  background: rgba(28, 88, 185, 0.8);
+  border-radius: 50%;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-animation-name: "play_down";
+  -moz-animation-name: "play_up";
+  animation-duration: 1.8s;
+  animation-iteration-count: infinite;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.5);
+}
+@keyframes play_up {
+  0% {
+    -webkit-box-shadow: 0 0 rgba(47, 121, 240, 0.6);
+    -moz-box-shadow: 0 0 rgba(47, 121, 240, 0.6);
+    box-shadow: 0 0 rgba(47, 121, 240, 0.6);
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 20px rgba(0, 163, 182, 0);
+    -moz-box-shadow: 0 0 0 20px rgba(0, 163, 182, 0);
+    box-shadow: 0 0 0 20px rgba(0, 163, 182, 0);
+  }
+}
+
+@keyframes play_down {
+  0% {
+    -webkit-box-shadow: 0 0 rgba(55, 55, 55, 0.6);
+    -moz-box-shadow: 0 0 rgba(55, 55, 55, 0.6);
+    box-shadow: 0 0 rgba(55, 55, 55, 0.6);
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 20px rgba(55, 55, 55, 0);
+    -moz-box-shadow: 0 0 0 20px rgba(55, 55, 55, 0);
+    box-shadow: 0 0 0 20px rgba(55, 55, 55, 0);
+  }
+}
+
+/* 
+--------------------------------------
+-Доделать блок footer и shave_block
+-Доделать @media для разных разрешений
+--------------------------------------
+*/
+
+/* media  25.12.22 (не доделанно)*/
+@media screen and (max-width: 900px) {
+  .info_text_box p {
+    font-size: 14px;
+  }
+  .info_wrapper {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+  .dani_photo {
+    width: 100vw;
+    height: 25vh;
+  }
+  .dani_photo img {
+    scale: 0.4;
+  }
+  .pole {
+    display: none;
+  }
+}
