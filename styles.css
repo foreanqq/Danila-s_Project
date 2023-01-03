@@ -284,30 +284,90 @@ body {
   }
 }
 
-/* 
---------------------------------------
--Доделать блок footer и shave_block
--Доделать @media для разных разрешений
---------------------------------------
-*/
-
-/* media  25.12.22 (не доделанно)*/
+/* media  03.01.2023 (не доделанно)*/
 @media screen and (max-width: 900px) {
+  .header {
+    height: 30vh;
+    background-position: 0 0;
+    background-size: contain;
+  }
+  .header_container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .header_text {
+    width: 70%;
+    font-size: 16px;
+  }
+  .logo {
+    width: 80%;
+  }
+  .info {
+    position: relative;
+    height: 65vh;
+  }
+  .info_text {
+    width: 82%;
+    margin: 0 auto;
+    text-align: right;
+    padding-right: 40px;
+  }
   .info_text_box p {
     font-size: 14px;
   }
+  .info_text_box h4 {
+    font-size: 22px;
+  }
   .info_wrapper {
     flex-direction: column-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .dani_photo {
-    width: 100vw;
-    height: 25vh;
+    height: 200px;
+    overflow: hidden;
   }
   .dani_photo img {
-    scale: 0.4;
+    height: 100%;
   }
   .pole {
-    display: none;
+    position: absolute;
+    top: 35%;
+    right: -47px;
+    height: 70%;
+  }
+
+  /* galery */
+  .galary__foto img {
+    max-width: 200px;
+  }
+  .galary__text {
+    font-size: 14px;
+  }
+
+  /* shave_block */
+  .shave_block {
+    height: 50vh;
+    background-size: cover;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .shave_logo {
+    height: 40vh;
+  }
+
+  /* button */
+  .button a {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  /* footer */
+  .shave_icons {
+    height: 20%;
   }
 }
