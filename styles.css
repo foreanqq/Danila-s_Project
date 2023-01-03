@@ -133,11 +133,10 @@ body {
 /* gallery */
 
 .galary_image {
-  background-color: olive;
-  /* background: url("assets/img/black_texture.jpg"); */
+  background-color: rgb(4, 3, 3);
   display: flex;
   min-width: 0;
-  padding: 15px 0 15px 20px;
+  padding: 25px 0 25px 35px;
 }
 .galary_cont {
   min-width: 250px;
@@ -150,6 +149,9 @@ body {
   align-items: flex-start;
   flex-direction: column;
 }
+.galary__foto {
+  width: 30%;
+}
 .galary__foto img {
   min-width: 100%;
   min-height: 100%;
@@ -160,8 +162,9 @@ body {
   flex-direction: column-reverse;
 }
 .galary__text {
+  width: 85%;
   text-align: left;
-  font-size: 20px;
+  font-size: 16px;
   line-height: calc(27 / 20 * 100%);
   font-weight: 500;
   color: white;
